@@ -1,0 +1,65 @@
+/*=================================================================*/
+/*                      DARK MODE                              
+/*=================================================================*/
+body.dark {
+    color: #FFF;
+    background-color: $colordark;
+    .section-title {
+        color: #FFF;
+        &:before {
+            background: url('../images/dots-bg-light.svg');
+        }
+    }
+    .bg-dark {
+        background: #302f4e !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #FFF;
+    }
+    .triangle-top:before {
+        border-bottom-color: #302f4e;
+    }
+    .timeline.exp .timeline-container::after, .timeline.edu .timeline-container::after {
+        background: #302f4e;
+    }
+    .portfolio-filter li {
+        color: #FFF;
+    }
+    a:hover {
+        color: #FFF;
+    }
+    .portfolio-filter li.current {
+        color: $colorpink;
+    }
+    .blog-item .details h4.title a {
+        color: #FFF;
+        &:hover {
+            color: $colorpink;
+        }
+    }
+    .contact-info {
+        background-image: url('../images/map-light.png');
+    }
+    .white-popup {
+        background: #302f4e;
+    }
+    footer.footer {
+        border-top: solid 1px rgba(255, 255, 255, 0.1);
+    }
+    .content-blog,
+    .blog-page-section {
+        background: #353353;
+    }
+    .bg-white {
+        background-color: #302f4e !important;
+    }
+    .blog-standard .meta li a,  .blog-standard .title a,  .comment-author .fn {
+        color: #fff;
+    }
+    .blog-page-section .blog-pagination ul li {
+        background-color: #302f4e !important;
+    }
+    .blog-page-section .blog-single {
+        background-color: #302f4e !important;
+    }
+}

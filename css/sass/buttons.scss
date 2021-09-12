@@ -1,0 +1,93 @@
+/*=================================================================*/
+/*                     BUTTONS
+/*=================================================================*/
+.btn {
+    border-radius: 30px;
+    font-family: $fonthead;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 1;
+    padding: 12px 32px;
+    position: relative;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+@-webkit-keyframes button-push {
+    50% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes hvr-push {
+    50% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+}
+
+.btn-default {
+    color: #FFF;
+    background: $colorpink;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    &:hover {
+        color: #FFF;
+        -webkit-animation-name: button-push;
+        animation-name: button-push;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    }
+}
+
+
+.btn-full {
+    text-align: center;
+    width: 100%;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 28px 30px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 0;
+}
+
+.btn-sm {
+    padding: 17px 16px;
+    font-size: 12px;
+    line-height: 0;
+}
+
+.btn-xs {
+    padding: 12px 10px;
+    font-size: 12px;
+    line-height: 0;
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+}
